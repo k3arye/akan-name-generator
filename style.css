@@ -108,6 +108,26 @@ table {
     color: #333;
     margin-top: 20px;
 }   
+
+#result {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff2b3;
+  border-radius: 12px;
+  border: 2px solid #d4af37;
+  font-family: 'Gill Sans', Calibri, sans-serif;
+  font-size: large;
+}
+
+#akanName {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2f2f2f;
+  font-family: "Trade Winds", system-ui;
+}
+
 #footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14px;
