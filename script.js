@@ -4,7 +4,6 @@ event.preventDefault();
 
 
 let birthday = document.getElementById("birthday").value;
-let gender = genderInput.value;
 
 let genderInput = document.querySelector('input[name="gender"]:checked');
 
@@ -16,6 +15,8 @@ if (!genderInput){
     document.getElementById("akan-name").innerText = "Please select your gender!";
     return;
 }
+
+let gender = genderInput.value;
 
 let date = new Date(birthday);
 
