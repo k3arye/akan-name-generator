@@ -1,9 +1,11 @@
 
-document.getElementById("akan-form").addEventListener("click", (event)=> {
+document.getElementById("akan-form").addEventListener("submit", (event)=> {
 event.preventDefault();
 
 
-let birthday = document.getElementById("birthay").value;
+let birthday = document.getElementById("birthday").value;
+let gender = genderInput.value;
+
 let genderInput = document.querySelector('input[name="gender"]:checked');
 
 if (!birthday){
@@ -33,9 +35,9 @@ let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 let akanName;
 if (gender === "male"){
-    akanName = maleNames[day]
+    akanName = maleNames[d]
 } else{
-    akanName = femaleNames[day]
+    akanName = femaleNames[d]
 }
 
 document.getElementById("akan-name").innerText = akanName;
