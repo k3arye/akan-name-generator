@@ -26,4 +26,30 @@ h1{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  th {
+      font-family: "Trade Winds", system-ui;
+    background-color: goldenrod;
+    color: #333;
+    padding: 10px;
+    font-size: larger;
+  }
+
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+  }
+
+  tr:nth-child(even) {
+    background-color: #fff8dc;
+  }
 
