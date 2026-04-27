@@ -50,6 +50,53 @@ table {
   }
 
   tr:nth-child(even) {
-    background-color: #fff8dc;
+    background-color: #fdde6c;
   }
+
+  form {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fffdf5;
+    border: 2px solid gold;
+    border-radius: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #fdde6c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  button:hover {
+    background-color: #e6c200;
+  }
+
+  button:active{
+    background-color: #ffd903;
+  }
+
 
