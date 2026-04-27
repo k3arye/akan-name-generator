@@ -31,15 +31,14 @@ d = (d + 7) % 7;
 let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-
-
-
-
 let akanName;
 if (gender === "male"){
     akanName = maleNames[day]
 } else{
     akanName = femaleNames[day]
 }
-})
+
+document.getElementById("akan-name").innerText = akanName;
+
+});
     
