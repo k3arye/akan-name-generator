@@ -1,5 +1,7 @@
 body{
-    /* background-color: black; */
+    padding: 0;
+    margin: 0;
+     background-color: #fffdf5
 }
 
 header{
@@ -10,14 +12,14 @@ h1{
   font-family: "Trade Winds", system-ui;
   font-weight: 400;
   font-style: normal;
-  color: gold;
+  color: #d4af37;
 }
 
 .introduction{
     text-align: center;
     font-size: larger;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(209, 185, 50);
+    background-color: #fff2b3;
     color: #333;
     padding: 15px;
     margin: 20px;
@@ -36,7 +38,7 @@ table {
 
   th {
       font-family: "Trade Winds", system-ui;
-    background-color: goldenrod;
+    background-color: #d4af37;
     color: #333;
     padding: 10px;
     font-size: larger;
@@ -50,7 +52,7 @@ table {
   }
 
   tr:nth-child(even) {
-    background-color: #fdde6c;
+    background-color: #fff2b3;
   }
 
   form {
@@ -83,7 +85,7 @@ table {
   button {
     margin-top: 15px;
     padding: 10px 15px;
-    background-color: #fdde6c;
+    background-color: #d4af37;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -96,7 +98,21 @@ table {
   }
 
   button:active{
-    background-color: #ffd903;
+    background-color: #b8942e;
+  }
+
+  footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fdde6c;
+    color: #333;
+    margin-top: 20px;
+}   
+#footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    color: #333
   }
 
 
