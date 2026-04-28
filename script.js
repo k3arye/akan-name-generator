@@ -2,7 +2,6 @@
 document.getElementById("akan-form").addEventListener("submit", (event)=> {
 event.preventDefault();
 
-
 let birthday = document.getElementById("birthday").value;
 
 let genderInput = document.querySelector('input[name="gender"]:checked');
@@ -19,16 +18,17 @@ if (!genderInput){
 let gender = genderInput.value;
 
 let date = new Date(birthday);
+let d = date.getDay();
 
-let DD = date.getDate();
-let MM = date.getMonth() + 1;
-let YYYY = date.getFullYear();
+// let DD = date.getDate();
+// let MM = date.getMonth() + 1;
+// let YYYY = date.getFullYear();
 
-let CC = Math.floor(YYYY / 100);
-let YY = YYYY % 100;
-let d = (4 * CC - 2 * CC - 1 + 45 * YY + 1026 * (MM + 1) + DD) % 7;
+// let CC = Math.floor(YYYY / 100);
+// let YY = YYYY % 100;
+// let d = (4 * CC - 2 * CC - 1 + 45 * YY + 1026 * (MM + 1) + DD) % 7;
 
-d = (d + 7) % 7;
+// d = (d + 7) % 7;
 
 // Akan Names
 let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
@@ -42,6 +42,5 @@ if (gender === "male"){
 }
 
 document.getElementById("akan-name").innerText = akanName;
-
 });
     

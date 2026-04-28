@@ -78,6 +78,10 @@ table {
     margin-right: 5px;
   }
 
+  #birthday{
+    font-size: x-large;
+  }
+
   label {
     font-weight: bold;
   }
@@ -91,6 +95,7 @@ table {
     cursor: pointer;
     font-weight: bold;
     font-size: large;
+    display: block;
   }
 
   button:hover {
