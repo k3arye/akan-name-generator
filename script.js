@@ -1,4 +1,3 @@
-
 document.getElementById("akan-form").addEventListener("submit", (event)=> {
 event.preventDefault();
 
@@ -18,19 +17,29 @@ if (!genderInput){
 let gender = genderInput.value;
 
 let date = new Date(birthday);
-let d = date.getDay();
 
-// let DD = date.getDate();
-// let MM = date.getMonth() + 1;
-// let YYYY = date.getFullYear();
+let DD = date.getDate();
+let MM = date.getMonth() + 1;
+let YYYY = date.getFullYear();
 
-// let CC = Math.floor(YYYY / 100);
-// let YY = YYYY % 100;
-// let d = (4 * CC - 2 * CC - 1 + 45 * YY + 1026 * (MM + 1) + DD) % 7;
+if (MM === 1 || MM === 2) {
+  MM += 12;
+  YYYY -= 1;
+}
 
-// d = (d + 7) % 7;
+let CC = Math.floor(YYYY / 100);
+let YY = YYYY % 100;
 
-// Akan Names
+let d =
+  (Math.floor(CC / 4) -
+    2 * CC -
+    1 +
+    Math.floor((5 * YY) / 4) +
+    Math.floor((26 * (MM + 1)) / 10) +
+    DD) %
+  7;
+d = ((d % 7) + 7) % 7;
+
 let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
