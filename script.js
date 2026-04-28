@@ -19,7 +19,7 @@ let gender = genderInput.value;
 let date = new Date(birthday);
 
 let DD = date.getDate();
-let MM = date.getMonth() + 1;
+let MM = date.getMonth() + 1;  //ensures that months are counted from 1-12 not 0-12
 let YYYY = date.getFullYear();
 
 if (MM === 1 || MM === 2) {
