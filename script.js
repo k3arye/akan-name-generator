@@ -1,7 +1,7 @@
 document.getElementById("akan-form").addEventListener("submit", (event)=> {
 event.preventDefault();
 
-let birthday = document.getElementById("birthday").value;
+let birthday = document.getElementById("birthday").value;  //makes the birthdate appear as a string
 
 let genderInput = document.querySelector('input[name="gender"]:checked');
 
@@ -16,10 +16,10 @@ if (!genderInput){
 
 let gender = genderInput.value;
 
-let date = new Date(birthday);
+let date = new Date(birthday); //converts the string to a Date object and JS understands its an actual date
 
-let DD = date.getDate();
-let MM = date.getMonth() + 1;  //ensures that months are counted from 1-12 not 0-12
+let DD = date.getDate(); //JS treats days like real calendar numbers
+let MM = date.getMonth() + 1;  //Js treats months like array indexes. Ensures that months are counted from 1-12 not 0-12
 let YYYY = date.getFullYear();
 
 if (MM === 1 || MM === 2) {
